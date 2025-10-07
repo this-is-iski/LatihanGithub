@@ -36,6 +36,7 @@
             this.txtjurusan = new System.Windows.Forms.TextBox();
             this.dgjurusan = new System.Windows.Forms.DataGridView();
             this.btnhapus = new System.Windows.Forms.Button();
+            this.lblformjurusan = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgjurusan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(90, 468);
+            this.button1.Location = new System.Drawing.Point(90, 406);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 42);
             this.button1.TabIndex = 2;
@@ -68,7 +69,7 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(236, 468);
+            this.btnedit.Location = new System.Drawing.Point(221, 406);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(75, 42);
             this.btnedit.TabIndex = 3;
@@ -92,8 +93,9 @@
             // 
             // dgjurusan
             // 
+            this.dgjurusan.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dgjurusan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgjurusan.Location = new System.Drawing.Point(90, 247);
+            this.dgjurusan.Location = new System.Drawing.Point(90, 221);
             this.dgjurusan.Name = "dgjurusan";
             this.dgjurusan.RowHeadersWidth = 62;
             this.dgjurusan.RowTemplate.Height = 28;
@@ -102,18 +104,30 @@
             // 
             // btnhapus
             // 
-            this.btnhapus.Location = new System.Drawing.Point(367, 468);
+            this.btnhapus.Location = new System.Drawing.Point(367, 406);
             this.btnhapus.Name = "btnhapus";
             this.btnhapus.Size = new System.Drawing.Size(75, 42);
             this.btnhapus.TabIndex = 7;
             this.btnhapus.Text = "Hapus";
             this.btnhapus.UseVisualStyleBackColor = true;
             // 
+            // lblformjurusan
+            // 
+            this.lblformjurusan.AutoSize = true;
+            this.lblformjurusan.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblformjurusan.Location = new System.Drawing.Point(183, 37);
+            this.lblformjurusan.Name = "lblformjurusan";
+            this.lblformjurusan.Size = new System.Drawing.Size(186, 32);
+            this.lblformjurusan.TabIndex = 8;
+            this.lblformjurusan.Text = "Form Jurusan";
+            // 
             // FormJurusan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 620);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(543, 505);
+            this.Controls.Add(this.lblformjurusan);
             this.Controls.Add(this.btnhapus);
             this.Controls.Add(this.dgjurusan);
             this.Controls.Add(this.txtjurusan);
@@ -140,5 +154,6 @@
         private System.Windows.Forms.TextBox txtjurusan;
         private System.Windows.Forms.DataGridView dgjurusan;
         private System.Windows.Forms.Button btnhapus;
+        private System.Windows.Forms.Label lblformjurusan;
     }
 }
