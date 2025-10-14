@@ -59,13 +59,13 @@ namespace LatihanGithub
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MySqlConnection connect = new MySqlConnection("server=localhost;database=db_jurusan;uid=root;pwd;");
+            MySqlConnection conn = new MySqlConnection("server=localhost;database=db_jurusan;uid=root;pwd;");
             try
             {
-                connect.Open();
+                conn.Open();
                 string query = "INSERT INTO jurusan(id_jurusan,jurusan)" +
                     "VALUES(@id_jurusan,@jurusan)";
-                MySqlCommand cmd = new MySqlCommand(query, connect);
+                MySqlCommand cmd = new MySqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@id_jurusan", txtidjurusan.Text);
                 cmd.Parameters.AddWithValue("@jurusan", txtjurusan.Text);
                 cmd.ExecuteNonQuery();
@@ -80,7 +80,7 @@ namespace LatihanGithub
             }
             finally
             {
-                connect.Close();
+                conn.Close();
             }
         }
 
