@@ -31,7 +31,7 @@
             this.lblidjurusan = new System.Windows.Forms.Label();
             this.lbljurusan = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnedit = new System.Windows.Forms.Button();
+            this.btnkembali = new System.Windows.Forms.Button();
             this.txtidjurusan = new System.Windows.Forms.TextBox();
             this.txtjurusan = new System.Windows.Forms.TextBox();
             this.dgjurusan = new System.Windows.Forms.DataGridView();
@@ -66,16 +66,17 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "Simpan";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btnedit
+            // btnkembali
             // 
-            this.btnedit.Location = new System.Drawing.Point(221, 406);
-            this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(75, 42);
-            this.btnedit.TabIndex = 3;
-            this.btnedit.Text = "Edit";
-            this.btnedit.UseVisualStyleBackColor = true;
-            this.btnedit.Click += new System.EventHandler(this.button2_Click);
+            this.btnkembali.Location = new System.Drawing.Point(221, 406);
+            this.btnkembali.Name = "btnkembali";
+            this.btnkembali.Size = new System.Drawing.Size(75, 42);
+            this.btnkembali.TabIndex = 3;
+            this.btnkembali.Text = "Kembali";
+            this.btnkembali.UseVisualStyleBackColor = true;
+            this.btnkembali.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtidjurusan
             // 
@@ -110,6 +111,7 @@
             this.btnhapus.TabIndex = 7;
             this.btnhapus.Text = "Hapus";
             this.btnhapus.UseVisualStyleBackColor = true;
+            this.btnhapus.Click += new System.EventHandler(this.btnhapus_Click);
             // 
             // lblformjurusan
             // 
@@ -132,7 +134,7 @@
             this.Controls.Add(this.dgjurusan);
             this.Controls.Add(this.txtjurusan);
             this.Controls.Add(this.txtidjurusan);
-            this.Controls.Add(this.btnedit);
+            this.Controls.Add(this.btnkembali);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbljurusan);
             this.Controls.Add(this.lblidjurusan);
@@ -149,7 +151,7 @@
         private System.Windows.Forms.Label lblidjurusan;
         private System.Windows.Forms.Label lbljurusan;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.Button btnkembali;
         private System.Windows.Forms.TextBox txtidjurusan;
         private System.Windows.Forms.TextBox txtjurusan;
         private System.Windows.Forms.DataGridView dgjurusan;
